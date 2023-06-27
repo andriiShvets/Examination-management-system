@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExamifyClassLibrary", "ExamifyClassLibrary.csproj", "{630AAB49-8C03-422A-88DB-9FE0392592D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamifyApp", "..\ExamifyApp\ExamifyApp.csproj", "{684FFA7E-0C59-4D40-A2CB-CFC51EBEC49C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{630AAB49-8C03-422A-88DB-9FE0392592D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{630AAB49-8C03-422A-88DB-9FE0392592D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{630AAB49-8C03-422A-88DB-9FE0392592D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{630AAB49-8C03-422A-88DB-9FE0392592D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{684FFA7E-0C59-4D40-A2CB-CFC51EBEC49C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{684FFA7E-0C59-4D40-A2CB-CFC51EBEC49C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{684FFA7E-0C59-4D40-A2CB-CFC51EBEC49C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{684FFA7E-0C59-4D40-A2CB-CFC51EBEC49C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {106CACC5-85E9-47BC-ACEF-31AE651E7581}
+	EndGlobalSection
+EndGlobal

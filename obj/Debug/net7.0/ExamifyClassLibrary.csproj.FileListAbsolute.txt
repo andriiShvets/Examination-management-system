@@ -1,0 +1,34 @@
+D:\diploma\proj\ExamifyClassLibrary – копія\bin\Debug\net7.0\ExamifyClassLibrary.deps.json
+D:\diploma\proj\ExamifyClassLibrary – копія\bin\Debug\net7.0\ExamifyClassLibrary.dll
+D:\diploma\proj\ExamifyClassLibrary – копія\bin\Debug\net7.0\ExamifyClassLibrary.pdb
+D:\diploma\proj\ExamifyClassLibrary – копія\obj\Debug\net7.0\ExamifyClassLibrary.csproj.AssemblyReference.cache
+D:\diploma\proj\ExamifyClassLibrary – копія\obj\Debug\net7.0\ExamifyClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\diploma\proj\ExamifyClassLibrary – копія\obj\Debug\net7.0\ExamifyClassLibrary.AssemblyInfoInputs.cache
+D:\diploma\proj\ExamifyClassLibrary – копія\obj\Debug\net7.0\ExamifyClassLibrary.AssemblyInfo.cs
+D:\diploma\proj\ExamifyClassLibrary – копія\obj\Debug\net7.0\ExamifyClassLibrary.csproj.CoreCompileInputs.cache
+D:\diploma\proj\ExamifyClassLibrary – копія\obj\Debug\net7.0\ExamifyClassLibrary.dll
+D:\diploma\proj\ExamifyClassLibrary – копія\obj\Debug\net7.0\refint\ExamifyClassLibrary.dll
+D:\diploma\proj\ExamifyClassLibrary – копія\obj\Debug\net7.0\ExamifyClassLibrary.pdb
+D:\diploma\proj\ExamifyClassLibrary – копія\obj\Debug\net7.0\ref\ExamifyClassLibrary.dll
+D:\diploma\proj\ExamifyClassLibrary\bin\Debug\net7.0\ExamifyClassLibrary.deps.json
+D:\diploma\proj\ExamifyClassLibrary\bin\Debug\net7.0\ExamifyClassLibrary.dll
+D:\diploma\proj\ExamifyClassLibrary\bin\Debug\net7.0\ExamifyClassLibrary.pdb
+D:\diploma\proj\ExamifyClassLibrary\bin\Debug\net7.0\System.Windows.Forms.dll
+D:\diploma\proj\ExamifyClassLibrary\bin\Debug\net7.0\Accessibility.dll
+D:\diploma\proj\ExamifyClassLibrary\bin\Debug\net7.0\System.Deployment.dll
+D:\diploma\proj\ExamifyClassLibrary\bin\Debug\net7.0\System.Runtime.Serialization.Formatters.Soap.dll
+D:\diploma\proj\ExamifyClassLibrary\bin\Debug\net7.0\System.Windows.Forms.xml
+D:\diploma\proj\ExamifyClassLibrary\bin\Debug\net7.0\Accessibility.xml
+D:\diploma\proj\ExamifyClassLibrary\bin\Debug\net7.0\System.Deployment.xml
+D:\diploma\proj\ExamifyClassLibrary\bin\Debug\net7.0\System.Runtime.Serialization.Formatters.Soap.xml
+D:\diploma\proj\ExamifyClassLibrary\obj\Debug\net7.0\ExamifyClassLibrary.csproj.AssemblyReference.cache
+D:\diploma\proj\ExamifyClassLibrary\obj\Debug\net7.0\ExamifyClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\diploma\proj\ExamifyClassLibrary\obj\Debug\net7.0\ExamifyClassLibrary.AssemblyInfoInputs.cache
+D:\diploma\proj\ExamifyClassLibrary\obj\Debug\net7.0\ExamifyClassLibrary.AssemblyInfo.cs
+D:\diploma\proj\ExamifyClassLibrary\obj\Debug\net7.0\ExamifyClassLibrary.csproj.CoreCompileInputs.cache
+D:\diploma\proj\ExamifyClassLibrary\obj\Debug\net7.0\ExamifyClassLibrary.csproj.CopyComplete
+D:\diploma\proj\ExamifyClassLibrary\obj\Debug\net7.0\ExamifyClassLibrary.dll
+D:\diploma\proj\ExamifyClassLibrary\obj\Debug\net7.0\refint\ExamifyClassLibrary.dll
+D:\diploma\proj\ExamifyClassLibrary\obj\Debug\net7.0\ExamifyClassLibrary.pdb
+D:\diploma\proj\ExamifyClassLibrary\obj\Debug\net7.0\ref\ExamifyClassLibrary.dll
+D:\diploma\proj\ExamifyClassLibrary\obj\Debug\net7.0\ExamifyClassLibrary.csproj.ResolveComReference.cache
