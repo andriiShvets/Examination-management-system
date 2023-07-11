@@ -1,50 +1,87 @@
 # Examination-management-system
-Examify is a desktop application written in .NET, utilizing Windows Forms, Dapper framework, and Microsoft SQL Server. It serves as an examination management system designed for teachers to manage test exams. The application has two types of users: teachers and students.
+# Examify - Examination Management System
 
-Teacher Interface
-Upon opening the application, the user is presented with the login form (LoginForm.cs). The teacher can either exit the program or log in by clicking the "Admin" button. To log in, the teacher must enter their email address and password on the TeacherLoginForm.cs form (Fig. 3.4). If the entered credentials exist in the TeacherTbl database table, the teacher is redirected to the SubjectsForm.cs window (Fig. 3.5).
+This is a desktop application written in .NET with the use of Windows Forms, Dapper framework, and Microsoft SQL Server. It serves as an examination management system designed for teachers to manage test exams. The application has two types of users: teachers and students.
 
-SubjectsForm
-In the SubjectsForm, teachers can create subjects for exams. They can specify the number of questions and the time limit for the exam. The form also displays a DataGridView showing all the subjects associated with the specific teacher, retrieved from the SubjectTbl table based on the TeacherId. Teachers can add, edit, or delete subjects using the provided functionality. The form includes a menu platform for easy navigation between forms.
+## Table of Contents
 
-QuestionsForm
-The QuestionsForm is used for creating exam questions. Teachers can select a subject from a ComboBox and add questions by providing descriptions, answer options, correct answers, and point values. The DataGridView displays all the questions associated with a particular subject, retrieved from the QuestionTbl table. Teachers can delete questions from the database by selecting a row and clicking the "Delete" button.
+- [Description](#description)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Class Modules](#class-modules)
+- [ExamifyDB Database Description](#examifydb-database-description)
+- [License](#license)
 
-ResultsForm
-The ResultsForm allows teachers to view the results of student exams. The DataGridView displays the results obtained by students upon completing the exam. Teachers can export this table as a text file, containing a list of students and their scores, filtered by subject and selected group.
+## Description
 
-Student Interface
-Upon opening Examify, students are presented with the login form (LoginForm.cs). If the student has not yet taken the exam and enters a valid Gmail address and password, they are shown a window with exam rules (Fig. 3.11). Once the student agrees to the rules, a set number of questions for the subject they are registered for and the time limit are retrieved from the database.
+Examify is a desktop application that helps teachers manage exams, specifically test exams. It provides a user-friendly interface for teachers to create subjects, add questions, view student results, and more. Students can log in, take exams, and view their scores.
 
-ExamForm
-The ExamForm (Fig. 3.12) is where students take their exams. The form displays the subject name and student's name. Questions are presented one at a time, with answer options displayed as checkboxes. Students can navigate between questions using the "Previous" and "Next" buttons or the numbered buttons on the left side of the form. Selected answers are stored using the SelectedAnswer property in the Question.cs class.
+## Features
 
-Completion of the exam occurs in three scenarios: the time limit is reached, the student clicks the "Submit" button, or the student attempts to open another program or switch to another tab on their computer while the ExamsForm window is open. Focus is monitored using the OnDeactivate() method, which is triggered when the form loses focus (Fig. 3.13). In any case, the results are automatically calculated and stored in the ResultTbl table using the Result.cs and SqlConnection.cs classes. The recorded information includes StudentId, SubjectId, score, and the date and time of the exam. The ExamAccess field for the student is set to False, preventing them from retaking the exam.
+- Teacher Interface:
+  - Create subjects for exams.
+  - Add questions to subjects.
+  - View and save student results.
+- Student Interface:
+  - Log in and take exams.
+  - View exam rules.
+  - Submit answers and view scores.
 
-Prerequisites
+## Prerequisites
+
 To run the Examify application, ensure that you have the following dependencies installed:
+- .NET Framework
+- Windows Forms
+- Dapper framework
+- Microsoft SQL Server
 
-.NET Framework
-Windows Forms
-Dapper framework
-Microsoft SQL Server
-Installation
-Clone the repository to your local machine.
-Build the solution using Visual Studio or the .NET CLI.
-Set up the Microsoft SQL Server database and configure the connection string in the application.
-Run the application.
-Usage
-Launch the Examify application.
-Log in as a teacher using valid credentials.
-Navigate through the different forms to manage subjects, questions, and view results.
-Log in as a student using a valid Gmail address and password.
-Review the exam rules and start the exam.
-Answer the questions sequentially and submit the exam.
-View the results.
-License
-This project is licensed under the MIT License.
+## Installation
 
-Acknowledgments
-Dapper - A simple object mapper for .NET
-Microsoft SQL Server - Relational database management system
-Windows Forms - UI framework for creating desktop applications
+1. Clone the repository to your local machine.
+2. Build the solution using Visual Studio or the .NET CLI.
+3. Set up the Microsoft SQL Server database and configure the connection string in the application.
+4. Run the application.
+
+## Usage
+
+1. Launch the Examify application.
+2. Log in as a teacher using valid credentials.
+3. Navigate through the different forms to manage subjects, questions, and view results.
+4. Log in as a student using a valid Gmail address and password.
+5. Review the exam rules and start the exam.
+6. Answer the questions sequentially and submit the exam.
+7. View the results.
+
+## Class Modules
+
+The Examify application utilizes the following class modules:
+
+- **User**: An abstract class that defines common properties and methods for system users. It includes fields such as an identifier, name, password, and email. This class serves as the base class for the **Teacher** and **Student** classes.
+- **Teacher**: This class inherits from the **User** class and contains additional properties specific to teachers. It includes methods for adding and deleting subjects, creating questions, and updating student results.
+- **Student**: This class also inherits from the **User** class and includes properties specific to students. It provides methods for viewing available subjects, submitting answers to questions, and viewing their results.
+- **Subject**: This class represents a subject in the system. It has properties such as an identifier, subject name, number of questions, and time limit for the test.
+- **Question**: This class represents an individual question in the system. It includes properties such as an identifier, subject identifier, question description, and answer options.
+- **Result**: This class represents a student's result for a specific subject's test. It includes properties such as a result identifier, student identifier, subject identifier, score, and timestamp.
+- **CommonUtil**: This class contains common utilities and helper methods that can be used in various parts of the system.
+- **SqlConnector**: This class utilizes the Dapper framework for database communication and executing SQL queries.
+
+## ExamifyDB Database Description
+
+The project uses the Dapper framework to handle database connectivity. Dapper is a simple and fast framework that allows executing SQL queries and mapping the results to objects.
+
+The system utilizes the following tables:
+
+- **TeacherTbl**: Stores data about teachers, including their identifier, password, name, and email.
+- **SubjectTbl**: Stores data about subjects, including the subject identifier, teacher identifier, subject name, number of questions, and time limit.
+- **StudentTbl**: Stores data about students, including their identifier, subject identifier, student score, exam access, group, name, password, and email.
+- **QuestionTbl**: Stores data about questions, including the question identifier, subject identifier, question description, answer options, and question score.
+- **ResultsTbl**: Stores data about student results, including the result identifier, student identifier, subject identifier, score, and timestamp.
+
+Using these tables and their relationships, we can efficiently store and retrieve data about teachers, subjects, students, questions, and their respective results within the application.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
