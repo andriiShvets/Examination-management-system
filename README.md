@@ -1,4 +1,4 @@
-# Examination-management-system
+# Examination-management-system desctop application
 # Examify - Examination Management System
 
 This is a desktop application written in .NET with the use of Windows Forms, Dapper framework, and Microsoft SQL Server. It serves as an examination management system designed for teachers to manage test exams. The application has two types of users: teachers and students.
@@ -28,6 +28,42 @@ Examify is a desktop application that helps teachers manage exams, specifically 
   - Log in and take exams.
   - View exam rules.
   - Submit answers and view scores.
+
+## Screenshots
+
+### Teacher Interface
+
+![image](https://github.com/andriiShvets/Examination-management-system/assets/62800787/12987de7-8127-46d3-b04a-1e59c5d0dc5a)
+- *Figure 1: Login form.*
+
+![image](https://github.com/andriiShvets/Examination-management-system/assets/62800787/9f15d805-1ea4-4c2a-a1dc-8141b99bd2c0)
+- *Figure 2: Teacher's login form.*
+
+![image](https://github.com/andriiShvets/Examination-management-system/assets/62800787/524b0f66-144a-4995-b4fd-ba687cdd06ad)
+- *Figure 3: Subjects form.*
+
+![image](https://github.com/andriiShvets/Examination-management-system/assets/62800787/2589642c-89d4-4f1f-bb40-146e7dcd10fc)
+- *Figure 4: Questions form.*
+
+![image](https://github.com/andriiShvets/Examination-management-system/assets/62800787/5de4af5f-6cd2-4192-9c3d-c7bdef4a5859)
+- *Figure 5: Students form.*
+
+![image](https://github.com/andriiShvets/Examination-management-system/assets/62800787/d9b3b68e-a911-4c1e-b220-af6dd6e0b1eb)
+- *Figure 6: Results form.*
+
+![image](https://github.com/andriiShvets/Examination-management-system/assets/62800787/05bb22f3-8fc1-4541-8041-42bb06b3d82e)
+- *Figure 7: Loaded file from the results form of students' grades.*
+
+### User Interface
+
+![image](https://github.com/andriiShvets/Examination-management-system/assets/62800787/bd9db99e-0e63-443c-bc8e-a5804165a42f)
+- *Figure 8: Notification about the start of the exam.*
+
+![image](https://github.com/andriiShvets/Examination-management-system/assets/62800787/a47e511e-6d5d-4d52-8493-8e48bb779163)
+- *Figure 9: Exams form.*
+
+![image](https://github.com/andriiShvets/Examination-management-system/assets/62800787/745459e8-2082-49a6-9a28-b1b88126d4a7)
+- *Figure 10: Call to the OnDeactivate() method on the ExamsForm when exam ends.*
 
 ## Prerequisites
 
@@ -85,3 +121,4 @@ Using these tables and their relationships, we can efficiently store and retriev
 
 This project is licensed under the [MIT License](LICENSE).
 
+Please note that the database file "ExamifyDB" is not included in this repository. You need to manually set up the database by executing the SQL scripts provided in the repository's "ExamifyDB" folder.
