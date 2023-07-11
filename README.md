@@ -103,11 +103,19 @@ The Examify application utilizes the following class modules:
 - **CommonUtil**: This class contains common utilities and helper methods that can be used in various parts of the system.
 - **SqlConnector**: This class utilizes the Dapper framework for database communication and executing SQL queries.
 
+### Modular structure of the Examify application
+![image](https://github.com/andriiShvets/Examination-management-system/assets/62800787/cd212570-3753-4ca5-92d9-f92a41ed9c54)
+
+
 ## ExamifyDB Database Description
 
 The project uses the Dapper framework to handle database connectivity. Dapper is a simple and fast framework that allows executing SQL queries and mapping the results to objects.
 
 The system utilizes the following tables:
+### ExamifyDB database table structure
+
+![image](https://github.com/andriiShvets/Examination-management-system/assets/62800787/11434773-8d96-409a-a7ee-2c703de07626)
+
 
 - **TeacherTbl**: Stores data about teachers, including their identifier, password, name, and email.
 - **SubjectTbl**: Stores data about subjects, including the subject identifier, teacher identifier, subject name, number of questions, and time limit.
